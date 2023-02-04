@@ -53,7 +53,8 @@ Start Minikube by running the following command in your terminal:
 
 minikube start
 
-2. Create a Helm chart for the application by running the following command:
+2.
+Create a Helm chart for the application by running the following command:
 
 helm create <chart_name>
 
