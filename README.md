@@ -4,8 +4,8 @@ The code must be cloned or downloaded to your local machine.
 
 ----------------------------------------------
 **Building the solution locally**:
-1.
-Open your terminal and navigate to the directory where the code has been saved.
+
+1.Open your terminal and navigate to the directory where the code has been saved.
 
 2.
 Run the following command to build the Docker image:
