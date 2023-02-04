@@ -40,10 +40,9 @@ The updated solution should now be accessible at http://localhost:8000/jumble/{w
 
 -----------------------------------------------
 **Prerequisites For Deploying the application on Minikube through helm**:
-Minikube must be installed on your system.
+Minikube,Helm,Kubectl must be installed on your system.
 The code must be cloned or downloaded to your local machine.
 A Docker image of the application must be built.
-Helm must be installed on your system.
 
 -----------------------------------------------
 **Deploying the application**
