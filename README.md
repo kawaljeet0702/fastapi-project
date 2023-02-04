@@ -1,4 +1,4 @@
-**Prerequisites**:
+**Prerequisites For API deployment**:
 Docker must be installed on your system.
 The code must be cloned or downloaded to your local machine.
 
@@ -37,3 +37,50 @@ Make the necessary changes to the code on your local machine.
 Repeat steps 2 and 3 from the Building the solution locally section to apply the changes.
 
 The updated solution should now be accessible at http://localhost:8000/jumble/{word}.
+
+-----------------------------------------------
+**Prerequisites For Deploying the application on Minikube through helm**:
+Minikube must be installed on your system.
+The code must be cloned or downloaded to your local machine.
+A Docker image of the application must be built.
+Helm must be installed on your system.
+
+-----------------------------------------------
+**Deploying the application**
+
+1.
+Start Minikube by running the following command in your terminal:
+
+minikube start
+
+2. Create a Helm chart for the application by running the following command:
+
+helm create <chart_name>
+
+Replace <chart_name> with the desired name for the Helm chart.
+
+3.
+Modify the values.yaml file in the chart to include the Docker image details (line #8 repository:) and other configuration options. 
+
+4. 
+Install the Helm chart on the target cluster by running the following command:
+
+helm install <release_name> <chart_path>
+
+Replace <release_name> with the desired name and chart_path with the path for the Helm chart.
+
+5.
+To access the application, run the following command:
+
+kubectl expose deployment {{ .Release.Name }}-deployment --type=LoadBalancer
+
+Replace {{ .Release.Name }} with the actual name of the release.
+
+6.
+To access the applcation, run the following command:
+
+minikube service {{ .Release.Name }}-service
+
+Replace {{ .Release.Name }} with the actual name of the release.
+
+The above command opens the application in the web browser.
