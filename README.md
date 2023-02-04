@@ -31,6 +31,9 @@ The audit will return the last 10 api calls.
 
 ----------------------------------------------
 **Updating the solutio**n:
--->Make the necessary changes to the code on your local machine.
--->Repeat steps 2 and 3 from the Building the solution locally section to apply the changes.
--->The updated solution should now be accessible at http://localhost:8000/jumble/{word}.
+
+Make the necessary changes to the code on your local machine.
+
+Repeat steps 2 and 3 from the Building the solution locally section to apply the changes.
+
+The updated solution should now be accessible at http://localhost:8000/jumble/{word}.
